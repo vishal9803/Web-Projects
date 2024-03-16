@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tab Change Warning</title>
+</head>
+<body>
+
+<div> <h1> spyder_46<h1> </Div>
+
+<script>
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'hidden') {
+    // User switched to another tab or minimized the window
+    alert("Warning: You have switched to another tab or minimized the window. Please return to continue.");
+  }
+});
+</script>
+
+</body>
+</html>
